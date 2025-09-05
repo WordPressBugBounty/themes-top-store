@@ -12,7 +12,7 @@
  * Theme functions and definitions
  */
 if ( ! function_exists( 'top_store_setup' ) ) :
-define( 'TOP_STORE_THEME_VERSION','1.6.1');
+define( 'TOP_STORE_THEME_VERSION','1.6.2');
 define( 'TOP_STORE_THEME_DIR', get_template_directory() . '/' );
 define( 'TOP_STORE_THEME_URI', get_template_directory_uri() . '/' );
 define( 'TOP_STORE_THEME_SETTINGS', 'top-store-settings' );
@@ -126,6 +126,11 @@ define( 'TOP_STORE_THEME_SETTINGS', 'top-store-settings' );
                   'img' => 'icon-128x128.gif',
                  'active_filename' => 'th-product-compare/th-product-compare.php',
              ),
+            'th-wishlist' => array(
+				'name' => esc_html__( 'TH Wishlist for WooCommerce', 'top-store' ),
+				'img' => 'icon-128x128.gif',
+				'active_filename' => 'th-wishlist/th-wishlist.php',
+				),
 			 'lead-form-builder' => array(
                 'name' => esc_html__( 'Lead Form Builder', 'top-store' ),
                  'img' => 'icon-128x128.png',
@@ -324,6 +329,7 @@ function top_store_scripts(){
 	wp_enqueue_style( 'top-store-style', get_stylesheet_uri(), array(), TOP_STORE_THEME_VERSION );
 	wp_enqueue_style( 'dashicons' );
 	wp_add_inline_style('top-store-style', top_store_custom_style());
+	wp_add_inline_style('top-store-style', '@font-face{font-family:"th-icon";src:url("' . esc_url(get_template_directory_uri() . '/third-party/fonts/th-icon/fonts/th-icon.ttf?k3xn19') . '") format("truetype");font-weight:normal;font-style:normal;font-display:block;}');
     //enqueue js
     wp_enqueue_script("jquery-effects-core",array( 'jquery' ));
     wp_enqueue_script( 'jquery-ui-autocomplete',array( 'jquery' ),'1.0.0',true );
