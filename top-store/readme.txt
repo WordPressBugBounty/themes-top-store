@@ -4,7 +4,7 @@ Tags: wide-blocks, block-patterns, block-styles, editor-style, e-commerce, blog,
 Requires at least: WordPress 5.5
 Requires PHP: 5.5
 Tested up to: 6.8
-Stable tag: 1.6.2
+Stable tag: 1.6.3
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -23,6 +23,9 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 == Changelog ==
 
+= Version 1.6.3 =
+* Fix: Child theme error removed.
+
 = Version 1.6.2 =
 * Update:
 1. TH COMPARE INETEGRATED.
@@ -36,6 +39,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 9. Update: Header implementation through hooks using do_action( 'zita_header' );
 10. Update: Footer implementation through hooks using do_action( 'zita_footer' );
 11. Update: Absolute path in th-icon issue resolved.
+12. header wishlist icon align styled.
 
 = Version 1.6.1 =
 * Update: Customizer widget redirect issue resolved.
@@ -296,6 +300,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 9. Update: Header implementation through hooks using do_action( 'zita_header' );
 10. Update: Footer implementation through hooks using do_action( 'zita_footer' );
 11. Update: Absolute path in th-icon issue resolved.
+12. header wishlist icon align styled.
 
 
 == Resources ==
