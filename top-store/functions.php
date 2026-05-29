@@ -12,7 +12,7 @@
  * Theme functions and definitions
  */
 if ( ! function_exists( 'top_store_setup' ) ) :
-define( 'TOP_STORE_THEME_VERSION','1.7.0');
+define( 'TOP_STORE_THEME_VERSION','1.7.1');
 define( 'TOP_STORE_THEME_DIR', get_template_directory() . '/' );
 define( 'TOP_STORE_THEME_URI', get_template_directory_uri() . '/' );
 define( 'TOP_STORE_THEME_SETTINGS', 'top-store-settings' );
@@ -100,16 +100,16 @@ define( 'TOP_STORE_THEME_SETTINGS', 'top-store-settings' );
 
 		// Recommend plugins
         add_theme_support( 'recommend-plugins', array(
-        	'th-store-one' => array(
-				'name' => esc_html__( 'TH Store One – A powerful all in one WooCommerce toolkit', 'top-store' ),
-				'img' => 'icon-128x128.png',
-				'active_filename' => 'th-store-one/th-store-one.php',
-				),
             'hunk-companion' => array(
                 'name' => esc_html__( 'Hunk Companion (Highly Recommended)', 'top-store' ),
                 'img' => 'icon-128x128.png',
                 'active_filename' => 'hunk-companion/hunk-companion.php',
             ),
+				'th-store-one' => array(
+				'name' => esc_html__( 'Store One – A powerful all in one WooCommerce toolkit', 'top-store' ),
+				'img' => 'icon-128x128.png',
+				'active_filename' => 'th-store-one/th-store-one.php',
+				),
 			'vayu-blocks' => array(
 				'name' => esc_html__( 'Vayu blocks For Gutenberg', 'top-store' ),
 				'img' => 'icon-128x128.png',

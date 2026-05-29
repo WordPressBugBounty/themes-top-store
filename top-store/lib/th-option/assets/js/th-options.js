@@ -1,4 +1,5 @@
 
+
 function openTab(evt, tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -128,18 +129,18 @@ function openTab(evt, tabName) {
         /**
          * Plugin & Homepage Activation
          */
+
         _activePluginHomepage: function($slug,$init){
             var $message = jQuery( '.'+$slug);
                 $message.removeClass( 'install-now button-primary installed button-disabled updated-message' )
                 .addClass('updating-message')
                 .html($message.data('msg'));
-
             $.ajax({
                 url  : ajaxurl,
                 type : 'POST',
 
                 data : {
-                    action : 'th_activeplugin',
+                    action : 'top_store_activeplugin',
                     nonce  : THAdmin.nonce,
                     init   :  $init,
                     slug   :  $slug
@@ -166,6 +167,7 @@ function openTab(evt, tabName) {
                 var $button = jQuery( event.target ),
                 $init   = $button.data( 'init' ),
                 $slug   = $button.data( 'slug' );
+
                 THoptionAdmin._activePluginHomepage($slug,$init);
             },
         _bind: function(){               
